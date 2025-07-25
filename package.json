@@ -1,0 +1,23 @@
+{
+  "name": "airtable-clone",
+  "version": "1.0.0",
+  "description": "Airtable clone with Google Sheets integration",
+  "scripts": {
+    "start": "docker-compose up",
+    "start:dev": "docker-compose up -d",
+    "stop": "docker-compose down",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "build": "npm run build:backend && npm run build:frontend",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test",
+    "test": "npm run test:backend && npm run test:frontend"
+  },
+  "author": "",
+  "license": "MIT"
+}
